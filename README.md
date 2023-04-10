@@ -5,8 +5,7 @@ Ask the Microsoft 2022 10K a question and get an answer using Semantic Kernel an
 !(https://raw.githubusercontent.com/adhurwit/SemanticQuestion10K/main/10k-q-and-a.png)
 
 
-This is a sample project that shows the basics of how to ask questions to a document 
-- in this case Microsoft's 10K statement for 2022 - using the Semantic Kernel package. 
+This is a sample project that shows the basics of how to ask questions to a document uwing the Semantic Kernel project (https://github.com/microsoft/semantic-kernel). For this sample I have used Microsoft's 10K statement for 2022. 
 
 Embeddings are used to create a semantic database. When you ask a question, the database is searched for similar sentences. 
 A prompt is crafted from these sentences and sent to an OpenAI GPT-3 model in Azure OpenAI Service to create an answer.
