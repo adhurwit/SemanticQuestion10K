@@ -28,11 +28,11 @@ the smemantic database.
 
 5. Provide the following variables through user secrets:
 
-`
-dotnet user-secrets set "QDRANT_ENDPOINT" "http://localhost"
-dotnet user-secrets set "AZURE_OPENAI_ENDPOINT" "your-azure-openai-service-endpoint"
-dotnet user-secrets set "AZURE_OPENAI_KEY "your azure openai service key"
-`
+
+  dotnet user-secrets set "QDRANT_ENDPOINT" "http://localhost"
+  dotnet user-secrets set "AZURE_OPENAI_ENDPOINT" "your-azure-openai-service-endpoint"
+  dotnet user-secrets set "AZURE_OPENAI_KEY "your azure openai service key"
+
 
 
 ## Usage
