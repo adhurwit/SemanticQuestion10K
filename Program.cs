@@ -61,7 +61,7 @@ namespace SemanticQuestion10K
 
         public static async Task RunAsync(IKernel kernel)
         {
-            Console.WriteLine("Hi, welcome to Microsoft's 2022 10-K. What would you like to know?");
+            Console.WriteLine("\nHi, welcome to Microsoft's 2022 10-K. What would you like to know?\n");
             while (true)
             {
                 Console.Write("User: ");
@@ -94,7 +94,7 @@ namespace SemanticQuestion10K
                 var answer = kernel.CreateSemanticFunction(FUNCTION_DEFINITION, maxTokens: 250, temperature: 0);
 
                 var result = await answer.InvokeAsync();
-                Console.WriteLine("MS10K: " + result.Result.Trim());
+                Console.WriteLine("\nMS10K: " + result.Result.Trim() + "\n");
             }
         }
 
