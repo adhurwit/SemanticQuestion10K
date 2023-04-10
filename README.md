@@ -11,7 +11,7 @@ Embeddings are used to create a semantic database. When you ask a question, the 
 A prompt is crafted from these sentences and sent to an OpenAI GPT-3 model in Azure OpenAI Service to create an answer.
 
 
-**NOTE: this is sample code for demonstration purposes only and is not intended for production use nor is it supported in any way. 
+**NOTE: this is sample code for demonstration purposes only and is not intended for production use nor is it supported in any way.** 
 
 ## Setup
 
