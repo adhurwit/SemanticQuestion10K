@@ -1,0 +1,33 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <OutputType>Exe</OutputType>
+    <TargetFramework>net6.0</TargetFramework>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <Nullable>enable</Nullable>
+    <UserSecretsId>42df3a95-8a02-434a-a324-79d582153226</UserSecretsId>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="BlingFireNuget" Version="0.1.8" />
+    <PackageReference Include="Microsoft.Extensions.Configuration.UserSecrets" Version="7.0.0" />
+    <PackageReference Include="Microsoft.Extensions.Logging.Console" Version="7.0.0" />
+    <PackageReference Include="System.Linq.Async" Version="6.0.1" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Reference Include="Microsoft.SemanticKernel">
+      <HintPath>..\semantic-kernel-main\dotnet\src\SemanticKernel\bin\Debug\netstandard2.1\Microsoft.SemanticKernel.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.SemanticKernel.Connectors.Memory.Qdrant">
+      <HintPath>..\semantic-kernel-main\dotnet\src\Connectors\Connectors.Memory.Qdrant\bin\Debug\netstandard2.1\Microsoft.SemanticKernel.Connectors.Memory.Qdrant.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Update="docs\ms10k.txt">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+  </ItemGroup>
+
+</Project>
