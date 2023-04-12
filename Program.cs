@@ -34,7 +34,7 @@ namespace SemanticQuestion10K
             .WithMemoryStorage(memoryStore)
             .Build();
 
-            kernel.Config.AddAzureOpenAITextCompletionService("text-davinci-002", "text-davinci-002", Env.Var("AZURE_OPENAI_ENDPOINT"), Env.Var("AZURE_OPENAI_KEY"));
+            kernel.Config.AddAzureOpenAITextCompletionService("text-davinci-003", "text-davinci-003", Env.Var("AZURE_OPENAI_ENDPOINT"), Env.Var("AZURE_OPENAI_KEY"));
 
             if(question) RunAsync(kernel).Wait();
             if(parse) ParseText(kernel, tenkfile).Wait();
